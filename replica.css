@@ -1,0 +1,35 @@
+/* The reference screenshot uses the platform at a reduced browser scale. */
+@font-face { font-family: Inter; src: url('assets/inter-latin.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: block; }
+html { overflow-y: scroll; --navbar-height-with-marquee: 62px !important; }
+html::-webkit-scrollbar { width: 18px; }
+html::-webkit-scrollbar-track { background: #fafafa; }
+html::-webkit-scrollbar-thumb { background: #919191; border: 4px solid #fafafa; border-radius: 12px; }
+body { zoom: .8; padding-top: 166.75px !important; }
+#navbar.cui, #navbar.cui .navbar { height: 60px !important; min-height: 60px !important; }
+.dash-header-section { height: 90px; min-height: 90px; }
+.replica-poster { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.video-js { overflow: hidden; }
+.side-video-wrapper { aspect-ratio: 444/251; height: auto; }
+.title { font-size: 36.458333px; }
+.subtitle { font-size: 26.041667px; }
+.title-group .tag { font-size: 16.666667px; }
+.title-group > span { font-size: 21.875px !important; }
+.side-video-options .text-3 { font-size: 20.833333px; line-height: 25px; }
+.side-video-options .dashboard-video-title { font-size: 20.833333px; line-height: 25px; }
+.side-video-options + div { font-size: 17.708333px !important; }
+.all-link-wrapper-main-heading { font-size: 31.25px; }
+.all-link-wrapper-sub-heading { font-size: 17.708333px; }
+.dash-header-section-menu { font-size: 22.916667px !important; }
+#navbar.cui .nav-link { font-size: 14.583333px; }
+#navbar.cui .navbar-nav.center .nav-link { font-size: 14.583333px !important; }
+#navbar .header-logo { width: 156.25px; height: auto; }
+.dash-header-section .tc-brand-link__logo { width: 355px !important; height: auto !important; max-width: none; }
+.video-card { width: 375px; }
+.carousel { gap: 26.041667px; margin-left: 46.5px; margin-top: 2.5px; }
+#replica-quick-user-search { font-size: 14.583333px !important; right: 25px !important; }
+#replica-quick-user-search {
+  position: fixed; right: 24px; bottom: 12px; z-index: 2147483646;
+  font: 600 14px/1.4 system-ui,sans-serif;
+  color: white; background: #165dc7; border: 1px solid #104da8;
+  border-radius: 999px; padding: 13.25px 18px; box-shadow: 0 4px 18px #0003;
+}

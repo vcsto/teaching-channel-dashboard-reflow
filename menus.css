@@ -1,0 +1,32 @@
+/* Local preview interactions; top-layer panels avoid carousel/header clipping. */
+.mockup-icon-button { display: inline-flex; align-items: center; justify-content: center; flex: none; padding: 0; width: 24px; height: 24px; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.mockup-icon-button svg { display: block; flex: none; }
+button.mockup-waffle-button { border: 0; background: transparent; color: inherit; cursor: pointer; }
+.mockup-icon-button:focus-visible, .mockup-waffle-button:focus-visible { outline: 3px solid #1670db; outline-offset: 3px; border-radius: 4px; }
+#mockup-menu-panel { position: fixed; inset: auto; margin: 0; padding: 8px; box-sizing: border-box; width: 320px; max-width: calc(100vw - 16px); max-height: calc(100dvh - 16px); overflow: auto; overscroll-behavior: contain; color: #344054; background: #fff; border: 1px solid #ddd5e2; border-radius: 10px; box-shadow: 0 8px 30px #24103138; font: 16px/1.4 Inter,Arial,sans-serif; z-index: 2147483647; text-align: left; }
+#mockup-menu-panel::backdrop { background: transparent; }
+#mockup-menu-panel[hidden] { display: none; }
+#mockup-menu-panel *, #mockup-demo-status { box-sizing: border-box; }
+#mockup-menu-panel .demo-panel-heading { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding: 4px 4px 8px 8px; }
+#mockup-menu-panel .demo-panel-heading h2 { margin: 0; font: 700 16px/1.4 Inter,Arial,sans-serif; color: #542b64; }
+#mockup-menu-panel button { font: inherit; color: inherit; cursor: pointer; }
+#mockup-menu-panel .demo-close { display: flex; justify-content: center; align-items: center; width: 32px; height: 32px; flex: none; border: 0; border-radius: 4px; background: transparent; font-size: 24px; }
+#mockup-menu-panel .demo-menu-action { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px; padding: 10px; border: 0; border-radius: 6px; background: #fff; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+#mockup-menu-panel .demo-menu-action svg { flex: none; width: 20px; height: 20px; color: #542b64; }
+#mockup-menu-panel .demo-menu-action span { min-width: 0; }
+#mockup-menu-panel .demo-chevron { margin-left: auto; }
+#mockup-menu-panel button:hover, #mockup-menu-panel button:focus-visible, #mockup-menu-panel summary:focus-visible { background: #f1e6f5; color: #542b64; }
+#mockup-menu-panel button:focus-visible, #mockup-menu-panel summary:focus-visible { outline: 2px solid #6f2495; outline-offset: -2px; }
+#mockup-menu-panel .demo-app-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4px; }
+#mockup-menu-panel .demo-app-grid button { flex-direction: column; justify-content: flex-start; text-align: center; font-size: 13px; padding: 12px 6px; }
+#mockup-menu-panel .demo-app-grid svg { width: 26px; height: 26px; }
+#mockup-menu-panel details { border-top: 1px solid #e8e2ec; margin-top: 8px; }
+#mockup-menu-panel summary { padding: 12px 8px; cursor: pointer; font-weight: 600; color: #542b64; }
+#mockup-menu-panel .demo-preview-note { margin: 8px 8px 0; padding-top: 8px; border-top: 1px solid #e8e2ec; font-size: 12px; color: #667085; }
+#mockup-menu-panel .demo-feedback { padding: 8px; margin: 0; overflow-wrap: anywhere; }
+#mockup-menu-panel .demo-menu-action[aria-checked=true] svg { fill: #ead6f2; }
+@media(max-width:1199px) {
+  .mockup-icon-button { width: 32px; height: 32px; }
+  .reflow-account .mockup-waffle-button { padding: 8px 0; text-align: left; font: inherit; }
+  #mockup-menu-panel .demo-app-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
